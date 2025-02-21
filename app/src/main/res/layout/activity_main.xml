@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/recurso">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:src="@drawable/dd"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="45dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/azul"
+        android:textSize="30sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/azul"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <EditText
+        android:id="@+id/txt_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="30dp"
+        android:hint="email@example.com"
+        android:inputType="textEmailAddress">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/azul"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="30dp"
+        android:hint="passwordexample"
+        android:inputType="textPassword">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forget you password"
+        android:layout_gravity="end"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/azul"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/naranja">
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have acount...Create"
+        android:layout_gravity="end"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/azul"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif"
+        android:clickable="true">
+    </TextView>
+</LinearLayout>

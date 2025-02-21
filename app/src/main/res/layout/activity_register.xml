@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recurso"
+    android:orientation="vertical"
+    tools:context=".register">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="1dp"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/azul"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_row="0"
+            android:layout_column="0">
+        </TextView>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:src="@drawable/dd"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="45dp"
+            android:layout_row="0"
+            android:layout_column="1">
+        </ImageView>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Name"
+        android:textColor="@color/azul"
+        android:textSize="15sp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Ingresa Nombre"
+        android:inputType="text">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Mobile Number"
+        android:textColor="@color/azul"
+        android:textSize="15sp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Ingrese Numero de Celular"
+        android:inputType="textEmailAddress">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Email"
+        android:textColor="@color/azul"
+        android:textSize="15sp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:hint="email@example.com"
+        android:inputType="textEmailAddress">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Password"
+        android:textColor="@color/azul"
+        android:textSize="15sp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:hint="passwordexample"
+        android:inputType="textPassword">
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/naranja"
+        android:text="SIGNUP">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif"
+        android:text="Already have an account? sign in"
+        android:textColor="@color/azul"
+        android:textSize="10sp">
+    </TextView>
+
+</LinearLayout>
