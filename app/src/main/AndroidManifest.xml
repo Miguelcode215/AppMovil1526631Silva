@@ -16,7 +16,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".Panelinicio"
+            android:exported="false" />
+        <activity
             android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".iniciar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
