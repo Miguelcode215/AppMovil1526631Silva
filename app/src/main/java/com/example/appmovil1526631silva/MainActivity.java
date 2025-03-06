@@ -2,16 +2,25 @@ package com.example.appmovil1526631silva;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,8 +52,25 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ingresar = new Intent(MainActivity.this,Panelinicio.class);
-                startActivity(ingresar);
+                String emaillog = txtName.getText().toString();
+                String passlog = txtPass.getText().toString();
+
+                if(TextUtils.isEmpty(emaillog) || TextUtils.isEmpty(passlog)){
+                    Toast.makeText(MainActivity.this, "SE REQUIERE DE LOS DOS CAMPOS",Toast.LENGTH_SHORT).show();
+                }else {
+                    FirebaseAuth.getInstance().signInWithEmailAndPassword(emaillog, passlog).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()){
+                                Intent ingresar = new Intent(MainActivity.this,Panelinicio.class);
+                                startActivity(ingresar);
+                                finish();
+
+                                Toast.makeText(MainActivity.this, "LOGIN EXITOSO... BIENBENIDO",Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                }
             }
         });
     }

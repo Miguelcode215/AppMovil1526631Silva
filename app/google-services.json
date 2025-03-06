@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "676395086179",
+    "project_id": "appmovil1526631silva",
+    "storage_bucket": "appmovil1526631silva.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676395086179:android:fb7dc0166e3f9a877b6356",
+        "android_client_info": {
+          "package_name": "com.example.appmovil1526631silva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtVDIjawGgdwOVgsVbWQnv67nSjuSdAlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
