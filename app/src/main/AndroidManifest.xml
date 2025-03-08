@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppMovil1526631Silva"
         tools:targetApi="31">
         <activity
+            android:name=".registrar_cliente"
+            android:exported="false" />
+        <activity
+            android:name=".clientes"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
